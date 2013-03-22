@@ -1,0 +1,7 @@
+host: login.salesforce.com        # Use test.salesforce.com for sandbox
+client_secret: 4040353603002892646        # This is the Consumer Secret from Salesforce
+client_id: 3MVG99OxTyEMCQ3gg.yAvqxBcMkd0sFdvFAz0Myj26lOOlwKgfUJgFFKFMhTaiRuUCh1oyBHX4uN2J1A3zzgD
+sobject_module: SFDC_Models       # See below for details on using modules
+debugging: true                   # Can be useful while developing
+username: sse@branding.library
+password: Salesforce1
