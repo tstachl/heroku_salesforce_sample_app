@@ -1,4 +1,6 @@
 class LeadsController < ApplicationController
+  include Databasedotcom::Rails::Controller
+
   # GET /leads
   # GET /leads.json
   def index
@@ -41,6 +43,12 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(params[:lead])
+
+    # ADD ME
+    @lead['OwnerId'] = '00530000008Tqzr'
+    @lead['IsConverted'] = false
+    @lead['IsUnreadByOwner'] = true
+    # END
 
     respond_to do |format|
       if @lead.save
